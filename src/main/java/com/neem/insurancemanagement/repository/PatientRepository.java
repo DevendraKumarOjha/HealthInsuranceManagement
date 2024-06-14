@@ -1,0 +1,13 @@
+package com.neem.insurancemanagement.repository;
+
+import com.neem.insurancemanagement.entity.Patient;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface PatientRepository extends JpaRepository<Patient, Integer> {
+    public List<Patient> findAll();
+    public Patient findById(int id);
+}
