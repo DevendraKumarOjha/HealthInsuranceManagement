@@ -3,13 +3,12 @@ package com.neem.insurancemanagement.service;
 import com.neem.insurancemanagement.dto.PatientRequestDto;
 import com.neem.insurancemanagement.entity.Patient;
 import com.neem.insurancemanagement.entity.PatientDependents;
-import com.neem.insurancemanagement.entity.Subscriber;
 import com.neem.insurancemanagement.exception.PatientNotFoundException;
 import com.neem.insurancemanagement.repository.PatientDependentsRepository;
+import com.neem.insurancemanagement.repository.PatientRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.neem.insurancemanagement.repository.PatientRepository;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -35,7 +34,6 @@ public class PatientService {
         patient.setAge(requestDto.getAge());
         patient.setInsuranceType("Primary");
         patient.setInsurances(requestDto.getInsurance());
-        //patient.setPatientDeductible(requestDto.getPatientDeductible());
 
         patientRepository.save(patient);
 

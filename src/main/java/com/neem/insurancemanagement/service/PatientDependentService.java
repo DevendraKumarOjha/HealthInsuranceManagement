@@ -1,8 +1,6 @@
 package com.neem.insurancemanagement.service;
 
 import com.neem.insurancemanagement.dto.PatientDependentDto;
-import com.neem.insurancemanagement.dto.PatientRequestDto;
-import com.neem.insurancemanagement.entity.Patient;
 import com.neem.insurancemanagement.entity.PatientDependents;
 import com.neem.insurancemanagement.exception.PatientDependentNotFoundException;
 import com.neem.insurancemanagement.exception.PatientNotFoundException;

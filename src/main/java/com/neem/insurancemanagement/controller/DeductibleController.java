@@ -46,5 +46,4 @@ public class DeductibleController {
         List<PatientDeductible> deductible = deductibleService.updateDeductible(deductibleDetails);
         return deductible;
     }
-//update deductibel here amount,category to send in request;
 }

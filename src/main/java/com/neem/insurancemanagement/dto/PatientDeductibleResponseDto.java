@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,7 +18,5 @@ public class PatientDeductibleResponseDto {
 
     Patient patient;
     List<Deductible> deductibles;
-
     List<PatientDependents> patientDependents;
-
 }

@@ -13,9 +13,5 @@ import lombok.ToString;
 public class SubscriberRequestDto {
 
     private int patientId;
-    //private String firstName;
-    //private String secondName;
-    //private String insuranceType;
-    //private String coverageStart;
     private double deductible;
 }

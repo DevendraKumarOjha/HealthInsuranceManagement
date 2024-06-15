@@ -66,9 +66,7 @@ public class SubscriberService {
 
         List<Subscriber> subscribersToUpdate = subscriberRepository.findByDeductible(newDeductible);
         for (Subscriber subscriber : subscribersToUpdate) {
-            // Update subscriber's deductible information
             subscriber.setDeductible(newDeductible);
-            // You can perform additional updates here if needed
         }
         subscriberRepository.saveAll(subscribersToUpdate);
     }

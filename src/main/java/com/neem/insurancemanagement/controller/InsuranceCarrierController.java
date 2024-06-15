@@ -11,11 +11,12 @@ import java.text.ParseException;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 public class InsuranceCarrierController {
     @Autowired
     InsuranceCarrierService insuranceCarrierService;
 
-    @PostMapping("/api/carrier")
+    @PostMapping("/carrier")
     public ResponseEntity<InsuranceCarrier> createInsurance(@RequestBody InsuranceCarrierDto insuranceCarrierDto) throws ParseException {
         InsuranceCarrier createInsuranceCarrier = insuranceCarrierService.createInsuranceCarrier(insuranceCarrierDto);
         return ResponseEntity.ok(createInsuranceCarrier);

@@ -12,7 +12,5 @@ import lombok.ToString;
 public class DeductibleRequestDto {
     private String category;
     private double individualAmount;
-    //private int standardDeductibleAmount;
-    //private int standardDeductibleUsedAmount;
     boolean isNonStandard;
 }

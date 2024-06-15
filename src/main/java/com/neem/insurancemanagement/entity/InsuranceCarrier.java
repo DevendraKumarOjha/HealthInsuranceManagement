@@ -5,8 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @Entity
 @Table(name = "insurance_carrier")
@@ -24,6 +22,4 @@ public class InsuranceCarrier {
     String webSite;
 /*    @OneToMany(fetch = FetchType.LAZY)
     List<Insurance> insurance;*/
-
-
 }

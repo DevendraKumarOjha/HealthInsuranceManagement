@@ -33,7 +33,4 @@ public class Patient {
     @OneToOne
     @JoinColumn(name = "insuranceId")
     Insurance insurances;
-
-    //@OneToMany(mappedBy = "deductibleId" )
-    //List<PatientDeductible> patientDeductible;
 }

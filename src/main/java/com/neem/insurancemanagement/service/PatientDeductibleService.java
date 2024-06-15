@@ -95,7 +95,6 @@ public class PatientDeductibleService {
 
             deductiblesList.add(deductibleRepository.findById(patientDeductible.getDeductibleId()).get());
 
-            //deductibleIds.add(patientDeductible.getDeductibleId());
         }
 
         dto.setDeductibles(deductiblesList);

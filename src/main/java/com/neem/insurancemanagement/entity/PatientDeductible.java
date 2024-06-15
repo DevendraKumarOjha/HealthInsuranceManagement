@@ -11,10 +11,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PatientDeductible {
-
-
-
-    //private int deductibleId; //assumption deductibleId from deductible table;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int patientDeductibleId;

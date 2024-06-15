@@ -50,8 +50,8 @@ public class DeductibleService {
         if (deductibleDetails.isNonStandard())
             deductible.setNonStandard(deductibleDetails.isNonStandard());*/
 
-        List<PatientDeductible> listOfupdatedDeductibles = patientDeductibleRepository.saveAll(deductibleDetails);
-        return listOfupdatedDeductibles;
+        List<PatientDeductible> listOfUpdatedDeductibles = patientDeductibleRepository.saveAll(deductibleDetails);
+        return listOfUpdatedDeductibles;
     }
 
 }

@@ -20,6 +20,4 @@ public class PatientRequestDto {
     private int age;
     private String insuranceType;
     private Insurance Insurance;
-    //List<PatientDeductible> patientDeductible;
-
 }

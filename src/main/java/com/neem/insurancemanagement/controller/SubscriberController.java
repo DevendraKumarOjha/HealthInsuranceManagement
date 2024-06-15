@@ -17,7 +17,7 @@ public class SubscriberController {
     @Autowired
     private SubscriberService subscriberService;
 
-    @PostMapping
+    @PostMapping("/create-subscriber")
     public ResponseEntity<List<Subscriber>> createSubscriber(@RequestBody SubscriberRequestDto subscriber) {
         List<Subscriber> createdSubscriber = subscriberService.createSubscriber(subscriber);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdSubscriber);
@@ -29,7 +29,7 @@ public class SubscriberController {
         return ResponseEntity.ok("Subscribers updated for deductible change.");
     }
 
-    @GetMapping
+    @GetMapping("all_subscriber")
     public ResponseEntity<List<Subscriber>> getAllSubscribers() {
         List<Subscriber> subscribers = subscriberService.getAllSubscribers();
         return ResponseEntity.ok(subscribers);

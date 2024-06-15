@@ -13,5 +13,4 @@ public class RemainingStandardDeductibles {
     int standardAmount;
     int usedAmount;
     int remainingAmount;
-
 }

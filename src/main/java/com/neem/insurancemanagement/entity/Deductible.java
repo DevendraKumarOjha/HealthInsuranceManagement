@@ -11,14 +11,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Deductible {
-    //Assumption some plans have default amount;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int deductibleId;
-    //private int defaultStandardDeductibleAmount;
-    //private int standardDeductibleUsedAmount;
     private String category;
     private double individualAmount;
     boolean isNonStandard;
-
-    }
+}

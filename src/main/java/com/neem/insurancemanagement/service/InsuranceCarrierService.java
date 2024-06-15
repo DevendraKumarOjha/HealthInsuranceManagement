@@ -23,32 +23,12 @@ public class InsuranceCarrierService {
     public InsuranceCarrier createInsuranceCarrier(InsuranceCarrierDto insuranceCarrierDto) {
 
         InsuranceCarrier insuranceCarrier = new InsuranceCarrier();
-
-      // List<Insurance> carrierInsuranceRequests = insuranceCarrierDto.getInsurance();
-       /*List<Insurance>insuranceList = new ArrayList<>();
-
-       for(Insurance carrierInsuranceRequest:carrierInsuranceRequests){
-           Insurance insurance= new Insurance();
-           insurance.setInsurancePlanName(carrierInsuranceRequest.getInsurancePlanName());
-           insurance.setInsurancePlanNumber(carrierInsuranceRequest.getInsurancePlanNumber());
-           insurance.setInsuranceType(carrierInsuranceRequest.getInsuranceType());
-           insurance.setInsuranceNetworkStatus(carrierInsuranceRequest.getInsuranceNetworkStatus());
-           insurance.setInsurancePlanStatus(carrierInsuranceRequest.getInsurancePlanStatus());
-           insurance.setInsuranceFeeScheduler(carrierInsuranceRequest.getInsuranceFeeScheduler());
-           insurance.setInsurancePlanNotes(carrierInsuranceRequest.getInsurancePlanNotes());
-           insuranceList.add(insurance);
-       }*/
-
-
         insuranceCarrier.setCarrierName(insuranceCarrierDto.getCarrierName());
         insuranceCarrier.setPhoneNumber(insuranceCarrierDto.getPhoneNumber());
         insuranceCarrier.setCity(insuranceCarrierDto.getCity());
         insuranceCarrier.setState(insuranceCarrierDto.getState());
         insuranceCarrier.setZip(insuranceCarrierDto.getZip());
-        //insuranceCarrier.setInsurance(insuranceList);
-
         return insuranceCarrierRepository.save(insuranceCarrier);
-
     }
 
     public List<InsuranceCarrier> findAllInsuranceCarriers() throws Exception {

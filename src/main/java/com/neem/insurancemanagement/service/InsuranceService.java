@@ -32,10 +32,6 @@ public class InsuranceService {
         insurance.setInsuranceNetworkStatus(insuranceRequestDto.getInsuranceNetworkStatus());
         insurance.setInsurancePlanNotes(insuranceRequestDto.getInsurancePlanNotes());
 
-        //insurance.setPrice(insuranceRequestDto.getPrice());
-        //insurance.setPolicyStartDate(sdf.parse(String.valueOf(insuranceRequestDto.getPolicyStartDate())));
-        //insurance.setPolicyEndDate(sdf.parse(String.valueOf(insuranceRequestDto.getPolicyEndDate())));
-
         insuranceRepository.save(insurance);
         if (insurance.getInsuranceId() > -1) {
             return insurance;

@@ -20,7 +20,4 @@ public class Subscriber {
     private String secondName;
     private double deductible;
     private boolean isSubscriber;
-
-
-
 }

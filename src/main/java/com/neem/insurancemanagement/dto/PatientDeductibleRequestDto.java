@@ -10,7 +10,6 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class PatientDeductibleRequestDto {
-    //private String deductibleCategory;
     private int patientId;
     private int deductibleId;
     private int standardDeductibleAmount;

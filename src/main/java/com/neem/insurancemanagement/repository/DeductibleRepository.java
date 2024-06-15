@@ -15,5 +15,4 @@ public interface DeductibleRepository extends JpaRepository<Deductible, Integer>
     @Query("select d from PatientDeductible d where d.patientId = ?1 AND d.deductibleId=?2")
     public PatientDeductible findByDeductibleIdAndPatientId(int patientId, int deductibleId);
 
-
 }
